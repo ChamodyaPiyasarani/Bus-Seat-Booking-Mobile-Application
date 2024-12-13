@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- LinearLayout to hold all UI components -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_centerInParent="true">
+
+        <!-- Title Text -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Information"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="33dp"
+            android:layout_gravity="left"
+            android:text="Bus Number"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/busNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Bus Model -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Model"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="33dp"/>
+        <EditText
+            android:id="@+id/busModel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Number of Seats -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Seats"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="33dp"/>
+        <EditText
+            android:id="@+id/numberOfSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Route -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Route"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="33dp"/>
+        <EditText
+            android:id="@+id/route"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Bus Type -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bus Type"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginStart="27dp"
+            android:layout_marginEnd="33dp"/>
+        <EditText
+            android:id="@+id/busType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/updateBusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3f3d56"
+            android:text="Update Details"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Delete Button -->
+        <Button
+            android:id="@+id/deleteBusButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FF0000"
+            android:text="Delete Bus" />
+    </LinearLayout>
+</ScrollView>
